@@ -5,4 +5,5 @@ jobs:
     uses: octopusden/octopus-base/.github/workflows/common-py-build-deploy.yml@add-common-wf
     with:
       process_env: Test
+      python_versions: '3'
     secrets: inherit
