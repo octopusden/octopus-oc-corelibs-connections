@@ -1,1 +1,2 @@
 python3-pysvn
+python3-psycopg2
