@@ -7,6 +7,8 @@ spec = {
     "version": __version,
     "license": "Apache License 2.0",
     "description": "Connection Manages",
+    "long_description": "",
+    "long_description_content_type": "text/plain",
     "packages": ["oc_connections"],
     "install_requires": [
       'oc_cdtapi', 
