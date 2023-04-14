@@ -1,8 +1,5 @@
 name: On push, deploying to Test
-on: 
-  push:
-    tags-ignore: 
-      - '**'
+on: [push]
 jobs:
   run-build-and-deploy:
     uses: octopusden/octopus-base/.github/workflows/common-py-build-deploy.yml@main
