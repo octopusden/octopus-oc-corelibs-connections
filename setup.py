@@ -1,9 +1,9 @@
 from setuptools import setup
 
-__version="1.0.0"
+__version="1.0.1"
 
 spec = {
-    "name": "oc_connections",
+    "name": "oc-connections",
     "version": __version,
     "license": "Apache License 2.0",
     "description": "Connection Manages",
@@ -11,8 +11,8 @@ spec = {
     "long_description_content_type": "text/plain",
     "packages": ["oc_connections"],
     "install_requires": [
-      'oc_cdtapi', 
-      'oc_pyfs',
+      'oc-cdtapi', 
+      'oc-pyfs',
       'pysmb'
     ],
     "package_data": {},
