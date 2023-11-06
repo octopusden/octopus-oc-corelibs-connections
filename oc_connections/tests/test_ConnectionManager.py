@@ -33,7 +33,7 @@ if version_info.major == 3:
             self.url = url;
 
         def listdir( self, url ):
-            return ['apps', 'cards', 'doc', 'ns', 'src'];
+            return ['apps', 'module1', 'doc', 'module2', 'src'];
 
     class MockPgClient( object ):
         dict_parms = dict();
@@ -181,7 +181,7 @@ class ConnectionManagerTestSuite(TestCase):
             self.cred_mgr.override_credential("TEST_SVN", "PASSWORD", "guest")
             client = self.conn_mgr.get_svn_fs_client("TEST_SVN");
             self.assertIsInstance( client, MockSvnFs );
-            self.assertItemsEqual(["apps", "cards", "doc", "ns", "src"], client.listdir('/'))
+            self.assertItemsEqual(["apps", "module1", "doc", "module2", "src"], client.listdir('/'))
 
     def test_svn_no_user(self):
         self.cred_mgr.reset_credential("TEST_SVN", "USER")
